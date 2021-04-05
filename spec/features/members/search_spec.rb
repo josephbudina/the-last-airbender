@@ -15,9 +15,13 @@ describe 'Air Bender Api' do
     # And I should see a list with the detailed information for the first 25 members of the Fire Nation.
     # And for each of the members I should see:
     # - The name of the member (and their photo, if they have one)
+    expect(page).to have_content('Chan (Fire Nation admiral)')
     # - The list of allies or "None"
+    expect(page).to have_content('Oza')
     # - The list of enemies or "None"
+    expect(page).to have_content('Water Tribes')
     # - Any affiliations that the member has
+    expect(page).to have_content('Fire Nation Fire Nation train')
     
   end
 end
